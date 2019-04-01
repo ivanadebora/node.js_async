@@ -14,8 +14,8 @@ function asyncDivision(dividend, divisor, cb) {
         cb(err, null);
       }
   
-      const quotient = Number(dividend) / Number(divisor);
-      cb(null, quotient);
+      const divideResult = Number(dividend) / Number(divisor);
+      cb(null, divideResult);
     }, 2000);
   }
   
@@ -74,7 +74,7 @@ function asyncDivision(dividend, divisor, cb) {
 //   }
   
   // callback hell start here...
-  isNumber(6, 3, (err, isNumber) => {
+  isNumber(6, 3, (err, res) => {
     if (err) {
       throw new Error(err);
     }
